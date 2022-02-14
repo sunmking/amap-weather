@@ -7,14 +7,14 @@
 * @author clyde-cn <1042080686@qq.com>
  */
 
-namespace Clyde\Amap;
+namespace Clydecn\Amap;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\RequestException;
 
 /**
  * Class Weather
- * @package Clyde\Amap
+ * @package Clydecn\Amap
  */
 class Weather
 {
