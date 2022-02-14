@@ -1,5 +1,5 @@
 {
-    "name": "clyde/yii2-weather",
+    "name": "clydecn/php-weather",
     "description": "基于高德开放平台的天气 SDK for PHP",
     "keywords": ["amap", "高德", "weather","php","sdk"],
     "type": "library",
@@ -17,7 +17,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Clyde\\Amap\\": "src/"
+            "Clydecn\\Amap\\": "src/"
         }
     }
 }
