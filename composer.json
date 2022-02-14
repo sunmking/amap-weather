@@ -1,0 +1,23 @@
+{
+    "name": "clyde/yii2-weather",
+    "description": "基于高德开放平台的天气 SDK for PHP",
+    "keywords": ["amap", "高德", "weather","php","sdk"],
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://github.com/clyde-cn/amap-weather",
+    "authors": [
+        {
+            "name": "clyde-cn",
+            "homepage": "https://clyde-cn.github.io/"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Clyde\\Amap\\": "src/"
+        }
+    }
+}
