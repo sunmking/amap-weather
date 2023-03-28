@@ -11,6 +11,8 @@ namespace SunmKing\Amap;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\RequestException;
+use SunmKing\Amap\exception\InvalidConfigException;
+use SunmKing\Amap\exception\InvalidException;
 
 /**
  * Class Weather
@@ -22,10 +24,6 @@ class Weather
      * @var string
      */
     public $key;
-    /**
-     * @var string
-     */
-    public $dataType='json';
 
     /**
      * @var string
@@ -44,7 +42,7 @@ class Weather
     {
         $this->key = $key;
         if ($this->key === null) {
-            throw new \Exception('The "key" property must be set.');
+            throw new InvalidConfigException('The "key" property must be set.');
         }
     }
 
@@ -89,15 +87,16 @@ class Weather
      * @param string $type
      * @param string $format
      * @return mixed|string
+     * @throws InvalidException
      */
     public function getWeather($city, $type = 'base', $format = 'json')
     {
         if (!\in_array(\strtolower($format), ['xml', 'json'])) {
-            throw new \Exception('Invalid response format: '.$format);
+            throw new InvalidException('Invalid response format: '.$format);
         }
 
         if (!\in_array(\strtolower($type), ['base', 'all'])) {
-            throw new \Exception('Invalid type value(base/all): '.$type);
+            throw new InvalidException('Invalid type value(base/all): '.$type);
         }
 
         $query = array_filter([
