@@ -1,14 +1,14 @@
 {
-    "name": "clydecn/php-amap-weather",
+    "name": "sunmking/php-amap-weather",
     "description": "基于高德开放平台的天气 SDK for PHP",
     "keywords": ["amap", "高德", "weather","php","sdk"],
     "type": "library",
     "license": "MIT",
-    "homepage": "https://github.com/clyde-cn/amap-weather",
+    "homepage": "https://github.com/sunmking/amap-weather",
     "authors": [
         {
             "name": "clyde-cn",
-            "homepage": "https://clyde-cn.github.io/"
+            "homepage": "https://sunmking.github.io/"
         }
     ],
     "require": {
@@ -17,7 +17,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Clydecn\\Amap\\": "src/"
+            "SunmKing\\Amap\\": "src/"
         }
     }
 }

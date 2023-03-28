@@ -1,9 +1,9 @@
-# php-amap-weather 基于高德开放平台的天气信息组件。
+# amap-weather 基于高德开放平台的天气信息组件。
 
 ## 安装
 
 ```sh
-$ composer require clydecn/php-amap-weather -vvv
+$ composer require sunmking/amap-weather -vvv
 ```
 
 ## 配置

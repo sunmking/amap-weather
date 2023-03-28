@@ -7,7 +7,7 @@
 * @author clyde-cn <1042080686@qq.com>
  */
 
-namespace Clydecn\Amap;
+namespace SunmKing\Amap;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\RequestException;
