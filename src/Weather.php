@@ -1,10 +1,10 @@
 <?php
 /**
 * Created by PhpStorm.
-* User: clyde
+* User: sunmking
 * Date: 2022/02/14
 * Time: 10:16
-* @author clyde-cn <1042080686@qq.com>
+* @author sunmking <1042080686@qq.com>
  */
 
 namespace SunmKing\Amap;
@@ -14,7 +14,7 @@ use GuzzleHttp\Exception\RequestException;
 
 /**
  * Class Weather
- * @package Clydecn\Amap
+ * @package SunmKing\Amap
  */
 class Weather
 {
